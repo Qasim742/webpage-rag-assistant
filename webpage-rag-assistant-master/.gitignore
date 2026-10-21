@@ -1,0 +1,20 @@
+# Backend gitignore placeholder.
+# Virtual Environment
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Environment Variables
+.env
+
+# VS Code
+.vscode/
+
+# Chroma Database
+backend/chroma_db/
+backend/documents/
+
+# Logs
+backend/logs/

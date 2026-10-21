@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Webpage RAG Assistant</title>
+
+    <link
+        rel="stylesheet"
+        href="popup.css"
+    >
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>Webpage RAG Assistant</h2>
+
+        <p id="status">
+            Ready
+        </p>
+
+        <button
+            id="process-page-btn"
+        >
+            Process Current Page
+        </button>
+
+        <textarea
+            id="question-input"
+            rows="4"
+            placeholder="Ask a question about this webpage..."
+        ></textarea>
+
+        <button
+            id="ask-btn"
+        >
+            Ask
+        </button>
+
+        <div class="answer-section">
+
+            <h3>Answer</h3>
+
+            <div id="answer">
+                No answer yet.
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="popup.js"></script>
+
+</body>
+
+</html>
