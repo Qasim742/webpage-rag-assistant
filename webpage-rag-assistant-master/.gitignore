@@ -1,6 +1,7 @@
-# Backend gitignore placeholder.
-# Virtual Environment
-venv/
+# Virtual Environments
+**/venv/
+**/.venv/
+**/env/
 
 # Python
 __pycache__/
@@ -8,13 +9,24 @@ __pycache__/
 
 # Environment Variables
 .env
+.env.*
+!.env.example
 
 # VS Code
 .vscode/
 
-# Chroma Database
+# Generated data
 backend/chroma_db/
 backend/documents/
+backend/uploads/*
+!backend/uploads/.gitkeep
 
 # Logs
 backend/logs/
+*.log
+
+# Private keys and certificates
+*.pem
+*.key
+*.p12
+*.pfx
